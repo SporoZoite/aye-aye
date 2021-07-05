@@ -103,7 +103,7 @@ ul {
     font-family:'treasuremap';
     font-weight: 600;
     word-spacing: 0.25rem;
-    font-size: 150%;
+    font-size: 3.5vmin;
     max-width: fit-content;
     max-height: 100px;
     min-height: auto;
