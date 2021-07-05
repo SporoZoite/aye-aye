@@ -1,0 +1,217 @@
+
+@font-face {
+    font-family:'blackbeardregular';
+    src: url('typos/blackbeard_regular-webfont.woff2') format('woff2'),
+         url('typos/blackbeard_regular-webfont.woff') format('woff'),
+         url('typos/BlackBeard Regular.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family:'treasuremap';
+    src: url('typos/Treasuremap-nRxz0.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    background-image:url("./background/wood.jpg");
+    background-size: 100%;
+    padding: 1rem 1rem;
+    line-height: 1.4;
+    font-family:'blackbeardregular';
+    font-size: 2.5vmin;
+   
+}
+
+
+.ship {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: .5rem;
+  margin: 1rem;
+}
+
+.sidebar {
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    padding: 1rem;
+    height: fit-content;
+    background-color: #bbb9b3;
+    border-radius: 1rem;
+    color: #20201f;
+    font-weight: bold;
+    font-size: 2.9vmin;
+  
+  }
+
+  .navbar {
+    width: 5rem;
+    padding-bottom: 1rem;
+    padding-top: 1rem;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    border-top: 2px solid #555;
+  }
+
+  
+  
+  li a {
+    display: block;
+    color: #20201f;
+    padding: 8px 16px;
+    text-decoration: none;
+    text-align: center;
+    border-bottom: 2px solid #555;
+  }
+  
+  /* Change the link color on hover */
+  li a:hover {
+    background-color: #555;
+    color: white;
+    cursor: url('cursor/15Linkselect.cur'), auto;
+  }
+
+  
+
+.flag {
+    display: grid;
+    grid-template-rows: 150px;
+    grid-gap: 1rem;
+    width: fit-content;
+
+
+
+    
+  }
+
+  .title {
+      display: flex;
+      flex-direction: row;
+      justify-items: center;
+      align-items: center;
+    background-color: rgb(0, 0, 0);
+    padding: 4rem;
+    color: white;
+    border-radius: 0.5rem;
+    font-family:'treasuremap';
+    font-weight: 600;
+    word-spacing: 0.25rem;
+    font-size: 150%;
+
+
+    
+
+
+  }
+
+  .boat {
+    width: 7rem;
+    float: left;
+    padding-right: 1rem;
+
+   
+}
+
+
+
+.pirates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .5rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  margin: 0.5rem;
+  
+}
+
+.pirate {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1rem;
+    background: #20201f;
+    color: #bbb9b3;
+    border-radius: 1rem;
+    font-weight: normal;
+    font-family:'blackbeardregular';
+    order: 1;
+}
+
+
+.pirate--planche {
+    padding: 5rem 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    background: #20201f;
+    color: #bbb9b3;
+    border-radius: 1rem;
+    font-family:'blackbeardregular';
+    order: 2;
+}
+
+.icones {
+    width: 4rem;
+    padding-bottom: 2rem;
+}
+
+
+.one {
+    max-width: fit-content;
+}
+
+
+
+.button {
+    border: none;
+    background: none;
+    padding-top:3rem ;
+  }
+
+.button:hover,
+.button:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+  transform: translateY(-0.25em);
+  cursor: url('cursor/15Linkselect.cur'), auto;
+
+}
+
+
+  .tooltip {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px dotted black;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 100px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 5px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+
+
