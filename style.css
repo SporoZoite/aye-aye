@@ -1,4 +1,10 @@
 
+*{
+  margin: 0;
+  padding: 0;
+}
+
+
 @font-face {
     font-family:'blackbeardregular';
     src: url('typos/blackbeard_regular-webfont.woff2') format('woff2'),
@@ -24,6 +30,7 @@ body {
     font-family:'blackbeardregular';
     font-size: 2.5vmin;
    
+   
 }
 
 
@@ -32,6 +39,9 @@ body {
   grid-template-columns: 200px 1fr;
   grid-gap: .5rem;
   margin: 1rem;
+  max-width: 1200px;
+  justify-content: center;
+  align-items: center;
 }
 
 .sidebar {
@@ -39,6 +49,7 @@ body {
     flex-direction: column;
     align-items: center;
     align-content: center;
+    align-self: flex-start;
     padding: 1rem;
     height: fit-content;
     background-color: #bbb9b3;
