@@ -126,7 +126,7 @@ ul {
 
 .pirates {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+
   grid-gap: .5rem;
   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
   margin: 0.5rem;
