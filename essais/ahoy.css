@@ -1,0 +1,87 @@
+
+/*
+  AUTO GRID
+  Set the minimum item size with `--auto-grid-min-size` and you'll
+  get a fully responsive grid with no media queries.
+*/
+.auto-grid {
+    --auto-grid-min-size: 16rem;
+  }
+  
+  .auto-grid > * {
+    max-width: 400px;
+  }
+  
+  .auto-grid > * + * {
+    margin-top: 1rem;
+  }
+  
+  @supports(display: grid) {
+    .auto-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(var(--auto-grid-min-size), 1fr));
+      grid-gap: 1rem;
+    }
+    
+    .auto-grid > * {
+      max-width: unset;
+    }
+  
+    .auto-grid > * + * {
+      margin-top: unset;
+    }
+  }
+  
+  /*
+    A utility with a max width that contains child elements and horizontal centers them
+  */
+  .container {
+    max-width: 65rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    justify-items: center;
+  }
+  
+  
+  /* Presentational styles */
+  
+  body {
+    background-image:url("./background-paper.jpeg");
+    background-size: 100%;
+    padding: 1rem 1rem;
+    line-height: 1.4;
+    font-family: sans-serif;
+  }
+  
+.pirate {
+    padding: 5rem 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    background: #20201f;
+    color: #bbb9b3;
+    border-radius: 1rem;
+  }
+  
+  
+
+  .button {
+    border: none;
+    background:  rgb(196, 178, 140);
+    border-radius: 1000px;
+    padding:       0.3rem 1.5rem;
+    color: rgb(83, 71, 47);
+    display:       block;
+    font:          normal bold 0.8rem "Open Sans", sans-serif;
+    text-align:    center;
+  }
+  
+  .button:hover {
+    background:    #5c584d;
+    border-radius: 1000px;
+    padding:       0.3rem 1.5rem;
+    color:         #ffffff;
+    display:       block;
+    font:          normal bold 0.8rem "Open Sans", sans-serif;
+    text-align:    center;
+  }
+

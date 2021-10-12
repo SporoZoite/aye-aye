@@ -1,0 +1,63 @@
+.ship {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  grid-gap: .5rem;
+}
+
+.pirates {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: .5rem;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+}
+
+.pirate {
+    padding: 5rem 1rem;
+    text-align: center;
+    font-size: 1.2rem;
+    background: #20201f;
+    color: #bbb9b3;
+    border-radius: 1rem;
+    order: 2;
+}
+
+
+.pirate--planche {
+  background-color: lightgreen;
+  order: 1;
+}
+
+body {
+    background-image:url("./background/background-paper.jpeg");
+    background-size: 100%;
+    padding: 1rem 1rem;
+    line-height: 1.4;
+    font-family: "Open Sans", sans-serif;
+}
+
+.sidebar {
+  background-color: #ddd;
+  padding: 1rem;
+}
+
+.button {
+    border: none;
+    background:  rgb(196, 178, 140);
+    border-radius: 1000px;
+    padding:       0.3rem 1.5rem;
+    color: rgb(83, 71, 47);
+    display:       block;
+    font:          normal bold 0.8rem "Open Sans", sans-serif;
+    text-align:    center;
+  }
+  
+  .button:hover {
+    background:    #5c584d;
+    border-radius: 1000px;
+    padding:       0.3rem 1.5rem;
+    color:         #ffffff;
+    display:       block;
+    font:          normal bold 0.8rem "Open Sans", sans-serif;
+    text-align:    center;
+  }
+
